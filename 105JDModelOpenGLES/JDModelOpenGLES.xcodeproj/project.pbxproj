@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F529B64F21A7B356003CE5A1 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B64E21A7B356003CE5A1 /* Cube.swift */; };
+		F529B65221A7B9F4003CE5A1 /* dungeon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = F529B65021A7B9F4003CE5A1 /* dungeon_01.png */; };
+		F529B65321A7B9F4003CE5A1 /* razewarelogo_128.png in Resources */ = {isa = PBXBuildFile; fileRef = F529B65121A7B9F4003CE5A1 /* razewarelogo_128.png */; };
+		F5944B8721A6ADD40081E7E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5944B8621A6ADD40081E7E1 /* AppDelegate.swift */; };
+		F5944B8921A6ADD40081E7E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5944B8821A6ADD40081E7E1 /* ViewController.swift */; };
+		F5944B8C21A6ADD40081E7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5944B8A21A6ADD40081E7E1 /* Main.storyboard */; };
+		F5944B8E21A6ADD60081E7E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5944B8D21A6ADD60081E7E1 /* Assets.xcassets */; };
+		F5944B9121A6ADD60081E7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5944B8F21A6ADD60081E7E1 /* LaunchScreen.storyboard */; };
+		F5944B9C21A6ADD60081E7E1 /* JDModelOpenGLESTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5944B9B21A6ADD60081E7E1 /* JDModelOpenGLESTests.swift */; };
+		F5944BA721A6ADD60081E7E1 /* JDModelOpenGLESUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5944BA621A6ADD60081E7E1 /* JDModelOpenGLESUITests.swift */; };
+		F5944BB821A6ADFD0081E7E1 /* SimpleFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F5944BB521A6ADFD0081E7E1 /* SimpleFragmentShader.glsl */; };
+		F5944BB921A6ADFD0081E7E1 /* SimpleVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F5944BB621A6ADFD0081E7E1 /* SimpleVertexShader.glsl */; };
+		F5944BBA21A6ADFD0081E7E1 /* summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5944BB721A6ADFD0081E7E1 /* summary.txt */; };
+		F5944BBC21A6AE5F0081E7E1 /* BaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5944BBB21A6AE5F0081E7E1 /* BaseEffect.swift */; };
+		F5944BBE21A6BACC0081E7E1 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5944BBD21A6BACC0081E7E1 /* Vertex.swift */; };
+		F5944BC021A6BAD80081E7E1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5944BBF21A6BAD80081E7E1 /* Model.swift */; };
+		F5944BC421A6BE410081E7E1 /* GLKMatrix+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5944BC321A6BE410081E7E1 /* GLKMatrix+Array.swift */; };
+		F5944BC621A6BEDC0081E7E1 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5944BC521A6BEDC0081E7E1 /* Square.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5944B9821A6ADD60081E7E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5944B7B21A6ADD40081E7E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5944B8221A6ADD40081E7E1;
+			remoteInfo = JDModelOpenGLES;
+		};
+		F5944BA321A6ADD60081E7E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5944B7B21A6ADD40081E7E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5944B8221A6ADD40081E7E1;
+			remoteInfo = JDModelOpenGLES;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F529B64E21A7B356003CE5A1 /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		F529B65021A7B9F4003CE5A1 /* dungeon_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_01.png; sourceTree = "<group>"; };
+		F529B65121A7B9F4003CE5A1 /* razewarelogo_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = razewarelogo_128.png; sourceTree = "<group>"; };
+		F5944B8321A6ADD40081E7E1 /* JDModelOpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDModelOpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5944B8621A6ADD40081E7E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5944B8821A6ADD40081E7E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5944B8B21A6ADD40081E7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5944B8D21A6ADD60081E7E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5944B9021A6ADD60081E7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5944B9221A6ADD60081E7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5944B9721A6ADD60081E7E1 /* JDModelOpenGLESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDModelOpenGLESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5944B9B21A6ADD60081E7E1 /* JDModelOpenGLESTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDModelOpenGLESTests.swift; sourceTree = "<group>"; };
+		F5944B9D21A6ADD60081E7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5944BA221A6ADD60081E7E1 /* JDModelOpenGLESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDModelOpenGLESUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5944BA621A6ADD60081E7E1 /* JDModelOpenGLESUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDModelOpenGLESUITests.swift; sourceTree = "<group>"; };
+		F5944BA821A6ADD60081E7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5944BB521A6ADFD0081E7E1 /* SimpleFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragmentShader.glsl; sourceTree = "<group>"; };
+		F5944BB621A6ADFD0081E7E1 /* SimpleVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertexShader.glsl; sourceTree = "<group>"; };
+		F5944BB721A6ADFD0081E7E1 /* summary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = summary.txt; sourceTree = "<group>"; };
+		F5944BBB21A6AE5F0081E7E1 /* BaseEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEffect.swift; sourceTree = "<group>"; };
+		F5944BBD21A6BACC0081E7E1 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		F5944BBF21A6BAD80081E7E1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F5944BC321A6BE410081E7E1 /* GLKMatrix+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GLKMatrix+Array.swift"; sourceTree = "<group>"; };
+		F5944BC521A6BEDC0081E7E1 /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5944B8021A6ADD40081E7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5944B9421A6ADD60081E7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5944B9F21A6ADD60081E7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5944B7A21A6ADD40081E7E1 = {
+			isa = PBXGroup;
+			children = (
+				F5944B8521A6ADD40081E7E1 /* JDModelOpenGLES */,
+				F5944B9A21A6ADD60081E7E1 /* JDModelOpenGLESTests */,
+				F5944BA521A6ADD60081E7E1 /* JDModelOpenGLESUITests */,
+				F5944B8421A6ADD40081E7E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5944B8421A6ADD40081E7E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5944B8321A6ADD40081E7E1 /* JDModelOpenGLES.app */,
+				F5944B9721A6ADD60081E7E1 /* JDModelOpenGLESTests.xctest */,
+				F5944BA221A6ADD60081E7E1 /* JDModelOpenGLESUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5944B8521A6ADD40081E7E1 /* JDModelOpenGLES */ = {
+			isa = PBXGroup;
+			children = (
+				F529B65021A7B9F4003CE5A1 /* dungeon_01.png */,
+				F529B65121A7B9F4003CE5A1 /* razewarelogo_128.png */,
+				F5944BB421A6ADE50081E7E1 /* shader */,
+				F5944B8621A6ADD40081E7E1 /* AppDelegate.swift */,
+				F5944B8821A6ADD40081E7E1 /* ViewController.swift */,
+				F5944BBB21A6AE5F0081E7E1 /* BaseEffect.swift */,
+				F5944BBD21A6BACC0081E7E1 /* Vertex.swift */,
+				F5944BBF21A6BAD80081E7E1 /* Model.swift */,
+				F5944BC521A6BEDC0081E7E1 /* Square.swift */,
+				F529B64E21A7B356003CE5A1 /* Cube.swift */,
+				F5944BC321A6BE410081E7E1 /* GLKMatrix+Array.swift */,
+				F5944B8A21A6ADD40081E7E1 /* Main.storyboard */,
+				F5944B8D21A6ADD60081E7E1 /* Assets.xcassets */,
+				F5944B8F21A6ADD60081E7E1 /* LaunchScreen.storyboard */,
+				F5944B9221A6ADD60081E7E1 /* Info.plist */,
+			);
+			path = JDModelOpenGLES;
+			sourceTree = "<group>";
+		};
+		F5944B9A21A6ADD60081E7E1 /* JDModelOpenGLESTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5944B9B21A6ADD60081E7E1 /* JDModelOpenGLESTests.swift */,
+				F5944B9D21A6ADD60081E7E1 /* Info.plist */,
+			);
+			path = JDModelOpenGLESTests;
+			sourceTree = "<group>";
+		};
+		F5944BA521A6ADD60081E7E1 /* JDModelOpenGLESUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5944BA621A6ADD60081E7E1 /* JDModelOpenGLESUITests.swift */,
+				F5944BA821A6ADD60081E7E1 /* Info.plist */,
+			);
+			path = JDModelOpenGLESUITests;
+			sourceTree = "<group>";
+		};
+		F5944BB421A6ADE50081E7E1 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				F5944BB521A6ADFD0081E7E1 /* SimpleFragmentShader.glsl */,
+				F5944BB621A6ADFD0081E7E1 /* SimpleVertexShader.glsl */,
+				F5944BB721A6ADFD0081E7E1 /* summary.txt */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5944B8221A6ADD40081E7E1 /* JDModelOpenGLES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5944BAB21A6ADD60081E7E1 /* Build configuration list for PBXNativeTarget "JDModelOpenGLES" */;
+			buildPhases = (
+				F5944B7F21A6ADD40081E7E1 /* Sources */,
+				F5944B8021A6ADD40081E7E1 /* Frameworks */,
+				F5944B8121A6ADD40081E7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDModelOpenGLES;
+			productName = JDModelOpenGLES;
+			productReference = F5944B8321A6ADD40081E7E1 /* JDModelOpenGLES.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5944B9621A6ADD60081E7E1 /* JDModelOpenGLESTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5944BAE21A6ADD60081E7E1 /* Build configuration list for PBXNativeTarget "JDModelOpenGLESTests" */;
+			buildPhases = (
+				F5944B9321A6ADD60081E7E1 /* Sources */,
+				F5944B9421A6ADD60081E7E1 /* Frameworks */,
+				F5944B9521A6ADD60081E7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5944B9921A6ADD60081E7E1 /* PBXTargetDependency */,
+			);
+			name = JDModelOpenGLESTests;
+			productName = JDModelOpenGLESTests;
+			productReference = F5944B9721A6ADD60081E7E1 /* JDModelOpenGLESTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5944BA121A6ADD60081E7E1 /* JDModelOpenGLESUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5944BB121A6ADD60081E7E1 /* Build configuration list for PBXNativeTarget "JDModelOpenGLESUITests" */;
+			buildPhases = (
+				F5944B9E21A6ADD60081E7E1 /* Sources */,
+				F5944B9F21A6ADD60081E7E1 /* Frameworks */,
+				F5944BA021A6ADD60081E7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5944BA421A6ADD60081E7E1 /* PBXTargetDependency */,
+			);
+			name = JDModelOpenGLESUITests;
+			productName = JDModelOpenGLESUITests;
+			productReference = F5944BA221A6ADD60081E7E1 /* JDModelOpenGLESUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5944B7B21A6ADD40081E7E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = jundong;
+				TargetAttributes = {
+					F5944B8221A6ADD40081E7E1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F5944B9621A6ADD60081E7E1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F5944B8221A6ADD40081E7E1;
+					};
+					F5944BA121A6ADD60081E7E1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F5944B8221A6ADD40081E7E1;
+					};
+				};
+			};
+			buildConfigurationList = F5944B7E21A6ADD40081E7E1 /* Build configuration list for PBXProject "JDModelOpenGLES" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5944B7A21A6ADD40081E7E1;
+			productRefGroup = F5944B8421A6ADD40081E7E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5944B8221A6ADD40081E7E1 /* JDModelOpenGLES */,
+				F5944B9621A6ADD60081E7E1 /* JDModelOpenGLESTests */,
+				F5944BA121A6ADD60081E7E1 /* JDModelOpenGLESUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5944B8121A6ADD40081E7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5944B9121A6ADD60081E7E1 /* LaunchScreen.storyboard in Resources */,
+				F5944B8E21A6ADD60081E7E1 /* Assets.xcassets in Resources */,
+				F5944BB921A6ADFD0081E7E1 /* SimpleVertexShader.glsl in Resources */,
+				F529B65321A7B9F4003CE5A1 /* razewarelogo_128.png in Resources */,
+				F5944BBA21A6ADFD0081E7E1 /* summary.txt in Resources */,
+				F529B65221A7B9F4003CE5A1 /* dungeon_01.png in Resources */,
+				F5944BB821A6ADFD0081E7E1 /* SimpleFragmentShader.glsl in Resources */,
+				F5944B8C21A6ADD40081E7E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5944B9521A6ADD60081E7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5944BA021A6ADD60081E7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5944B7F21A6ADD40081E7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5944BC021A6BAD80081E7E1 /* Model.swift in Sources */,
+				F5944B8921A6ADD40081E7E1 /* ViewController.swift in Sources */,
+				F5944BBE21A6BACC0081E7E1 /* Vertex.swift in Sources */,
+				F5944BC621A6BEDC0081E7E1 /* Square.swift in Sources */,
+				F529B64F21A7B356003CE5A1 /* Cube.swift in Sources */,
+				F5944BC421A6BE410081E7E1 /* GLKMatrix+Array.swift in Sources */,
+				F5944B8721A6ADD40081E7E1 /* AppDelegate.swift in Sources */,
+				F5944BBC21A6AE5F0081E7E1 /* BaseEffect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5944B9321A6ADD60081E7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5944B9C21A6ADD60081E7E1 /* JDModelOpenGLESTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5944B9E21A6ADD60081E7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5944BA721A6ADD60081E7E1 /* JDModelOpenGLESUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5944B9921A6ADD60081E7E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5944B8221A6ADD40081E7E1 /* JDModelOpenGLES */;
+			targetProxy = F5944B9821A6ADD60081E7E1 /* PBXContainerItemProxy */;
+		};
+		F5944BA421A6ADD60081E7E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5944B8221A6ADD40081E7E1 /* JDModelOpenGLES */;
+			targetProxy = F5944BA321A6ADD60081E7E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5944B8A21A6ADD40081E7E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5944B8B21A6ADD40081E7E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5944B8F21A6ADD60081E7E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5944B9021A6ADD60081E7E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5944BA921A6ADD60081E7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5944BAA21A6ADD60081E7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5944BAC21A6ADD60081E7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDModelOpenGLES/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDModelOpenGLES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5944BAD21A6ADD60081E7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDModelOpenGLES/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDModelOpenGLES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5944BAF21A6ADD60081E7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDModelOpenGLESTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDModelOpenGLESTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDModelOpenGLES.app/JDModelOpenGLES";
+			};
+			name = Debug;
+		};
+		F5944BB021A6ADD60081E7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDModelOpenGLESTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDModelOpenGLESTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDModelOpenGLES.app/JDModelOpenGLES";
+			};
+			name = Release;
+		};
+		F5944BB221A6ADD60081E7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDModelOpenGLESUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDModelOpenGLESUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDModelOpenGLES;
+			};
+			name = Debug;
+		};
+		F5944BB321A6ADD60081E7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDModelOpenGLESUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDModelOpenGLESUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDModelOpenGLES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5944B7E21A6ADD40081E7E1 /* Build configuration list for PBXProject "JDModelOpenGLES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5944BA921A6ADD60081E7E1 /* Debug */,
+				F5944BAA21A6ADD60081E7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5944BAB21A6ADD60081E7E1 /* Build configuration list for PBXNativeTarget "JDModelOpenGLES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5944BAC21A6ADD60081E7E1 /* Debug */,
+				F5944BAD21A6ADD60081E7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5944BAE21A6ADD60081E7E1 /* Build configuration list for PBXNativeTarget "JDModelOpenGLESTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5944BAF21A6ADD60081E7E1 /* Debug */,
+				F5944BB021A6ADD60081E7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5944BB121A6ADD60081E7E1 /* Build configuration list for PBXNativeTarget "JDModelOpenGLESUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5944BB221A6ADD60081E7E1 /* Debug */,
+				F5944BB321A6ADD60081E7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5944B7B21A6ADD40081E7E1 /* Project object */;
+}

@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F529B70421A7E783003CE5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B70321A7E783003CE5A1 /* AppDelegate.swift */; };
+		F529B70621A7E783003CE5A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B70521A7E783003CE5A1 /* ViewController.swift */; };
+		F529B70921A7E783003CE5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F529B70721A7E783003CE5A1 /* Main.storyboard */; };
+		F529B70B21A7E784003CE5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F529B70A21A7E784003CE5A1 /* Assets.xcassets */; };
+		F529B70E21A7E784003CE5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F529B70C21A7E784003CE5A1 /* LaunchScreen.storyboard */; };
+		F529B71921A7E784003CE5A1 /* JDAmbientLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B71821A7E784003CE5A1 /* JDAmbientLightTests.swift */; };
+		F529B72421A7E784003CE5A1 /* JDAmbientLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B72321A7E784003CE5A1 /* JDAmbientLightUITests.swift */; };
+		F529B73521A7E9EE003CE5A1 /* SimpleFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F529B73221A7E9EE003CE5A1 /* SimpleFragmentShader.glsl */; };
+		F529B73621A7E9EE003CE5A1 /* SimpleVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F529B73321A7E9EE003CE5A1 /* SimpleVertexShader.glsl */; };
+		F529B73721A7E9EE003CE5A1 /* summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = F529B73421A7E9EE003CE5A1 /* summary.txt */; };
+		F529B73C21A7EA11003CE5A1 /* GLKMatrix+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B73821A7EA11003CE5A1 /* GLKMatrix+Array.swift */; };
+		F529B73D21A7EA11003CE5A1 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B73921A7EA11003CE5A1 /* Vertex.swift */; };
+		F529B73E21A7EA11003CE5A1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B73A21A7EA11003CE5A1 /* Model.swift */; };
+		F529B73F21A7EA11003CE5A1 /* BaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B73B21A7EA11003CE5A1 /* BaseEffect.swift */; };
+		F529B74121A7EA27003CE5A1 /* dungeon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = F529B74021A7EA27003CE5A1 /* dungeon_01.png */; };
+		F529B74321A7EC1B003CE5A1 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B74221A7EC1A003CE5A1 /* Cube.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F529B71521A7E784003CE5A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F529B6F821A7E783003CE5A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F529B6FF21A7E783003CE5A1;
+			remoteInfo = JDAmbientLight;
+		};
+		F529B72021A7E784003CE5A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F529B6F821A7E783003CE5A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F529B6FF21A7E783003CE5A1;
+			remoteInfo = JDAmbientLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F529B70021A7E783003CE5A1 /* JDAmbientLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDAmbientLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529B70321A7E783003CE5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F529B70521A7E783003CE5A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F529B70821A7E783003CE5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F529B70A21A7E784003CE5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F529B70D21A7E784003CE5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F529B70F21A7E784003CE5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F529B71421A7E784003CE5A1 /* JDAmbientLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDAmbientLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529B71821A7E784003CE5A1 /* JDAmbientLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDAmbientLightTests.swift; sourceTree = "<group>"; };
+		F529B71A21A7E784003CE5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F529B71F21A7E784003CE5A1 /* JDAmbientLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDAmbientLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529B72321A7E784003CE5A1 /* JDAmbientLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDAmbientLightUITests.swift; sourceTree = "<group>"; };
+		F529B72521A7E784003CE5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F529B73221A7E9EE003CE5A1 /* SimpleFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragmentShader.glsl; sourceTree = "<group>"; };
+		F529B73321A7E9EE003CE5A1 /* SimpleVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertexShader.glsl; sourceTree = "<group>"; };
+		F529B73421A7E9EE003CE5A1 /* summary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = summary.txt; sourceTree = "<group>"; };
+		F529B73821A7EA11003CE5A1 /* GLKMatrix+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GLKMatrix+Array.swift"; sourceTree = "<group>"; };
+		F529B73921A7EA11003CE5A1 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		F529B73A21A7EA11003CE5A1 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F529B73B21A7EA11003CE5A1 /* BaseEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEffect.swift; sourceTree = "<group>"; };
+		F529B74021A7EA27003CE5A1 /* dungeon_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_01.png; sourceTree = "<group>"; };
+		F529B74221A7EC1A003CE5A1 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F529B6FD21A7E783003CE5A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B71121A7E784003CE5A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B71C21A7E784003CE5A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F529B6F721A7E783003CE5A1 = {
+			isa = PBXGroup;
+			children = (
+				F529B70221A7E783003CE5A1 /* JDAmbientLight */,
+				F529B71721A7E784003CE5A1 /* JDAmbientLightTests */,
+				F529B72221A7E784003CE5A1 /* JDAmbientLightUITests */,
+				F529B70121A7E783003CE5A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F529B70121A7E783003CE5A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F529B70021A7E783003CE5A1 /* JDAmbientLight.app */,
+				F529B71421A7E784003CE5A1 /* JDAmbientLightTests.xctest */,
+				F529B71F21A7E784003CE5A1 /* JDAmbientLightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F529B70221A7E783003CE5A1 /* JDAmbientLight */ = {
+			isa = PBXGroup;
+			children = (
+				F529B74021A7EA27003CE5A1 /* dungeon_01.png */,
+				F529B73121A7E9DD003CE5A1 /* shader */,
+				F529B70321A7E783003CE5A1 /* AppDelegate.swift */,
+				F529B70521A7E783003CE5A1 /* ViewController.swift */,
+				F529B73B21A7EA11003CE5A1 /* BaseEffect.swift */,
+				F529B73821A7EA11003CE5A1 /* GLKMatrix+Array.swift */,
+				F529B73A21A7EA11003CE5A1 /* Model.swift */,
+				F529B73921A7EA11003CE5A1 /* Vertex.swift */,
+				F529B74221A7EC1A003CE5A1 /* Cube.swift */,
+				F529B70721A7E783003CE5A1 /* Main.storyboard */,
+				F529B70A21A7E784003CE5A1 /* Assets.xcassets */,
+				F529B70C21A7E784003CE5A1 /* LaunchScreen.storyboard */,
+				F529B70F21A7E784003CE5A1 /* Info.plist */,
+			);
+			path = JDAmbientLight;
+			sourceTree = "<group>";
+		};
+		F529B71721A7E784003CE5A1 /* JDAmbientLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				F529B71821A7E784003CE5A1 /* JDAmbientLightTests.swift */,
+				F529B71A21A7E784003CE5A1 /* Info.plist */,
+			);
+			path = JDAmbientLightTests;
+			sourceTree = "<group>";
+		};
+		F529B72221A7E784003CE5A1 /* JDAmbientLightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F529B72321A7E784003CE5A1 /* JDAmbientLightUITests.swift */,
+				F529B72521A7E784003CE5A1 /* Info.plist */,
+			);
+			path = JDAmbientLightUITests;
+			sourceTree = "<group>";
+		};
+		F529B73121A7E9DD003CE5A1 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				F529B73221A7E9EE003CE5A1 /* SimpleFragmentShader.glsl */,
+				F529B73321A7E9EE003CE5A1 /* SimpleVertexShader.glsl */,
+				F529B73421A7E9EE003CE5A1 /* summary.txt */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F529B6FF21A7E783003CE5A1 /* JDAmbientLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F529B72821A7E784003CE5A1 /* Build configuration list for PBXNativeTarget "JDAmbientLight" */;
+			buildPhases = (
+				F529B6FC21A7E783003CE5A1 /* Sources */,
+				F529B6FD21A7E783003CE5A1 /* Frameworks */,
+				F529B6FE21A7E783003CE5A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDAmbientLight;
+			productName = JDAmbientLight;
+			productReference = F529B70021A7E783003CE5A1 /* JDAmbientLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F529B71321A7E784003CE5A1 /* JDAmbientLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F529B72B21A7E784003CE5A1 /* Build configuration list for PBXNativeTarget "JDAmbientLightTests" */;
+			buildPhases = (
+				F529B71021A7E784003CE5A1 /* Sources */,
+				F529B71121A7E784003CE5A1 /* Frameworks */,
+				F529B71221A7E784003CE5A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F529B71621A7E784003CE5A1 /* PBXTargetDependency */,
+			);
+			name = JDAmbientLightTests;
+			productName = JDAmbientLightTests;
+			productReference = F529B71421A7E784003CE5A1 /* JDAmbientLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F529B71E21A7E784003CE5A1 /* JDAmbientLightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F529B72E21A7E784003CE5A1 /* Build configuration list for PBXNativeTarget "JDAmbientLightUITests" */;
+			buildPhases = (
+				F529B71B21A7E784003CE5A1 /* Sources */,
+				F529B71C21A7E784003CE5A1 /* Frameworks */,
+				F529B71D21A7E784003CE5A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F529B72121A7E784003CE5A1 /* PBXTargetDependency */,
+			);
+			name = JDAmbientLightUITests;
+			productName = JDAmbientLightUITests;
+			productReference = F529B71F21A7E784003CE5A1 /* JDAmbientLightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F529B6F821A7E783003CE5A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = jundong;
+				TargetAttributes = {
+					F529B6FF21A7E783003CE5A1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F529B71321A7E784003CE5A1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F529B6FF21A7E783003CE5A1;
+					};
+					F529B71E21A7E784003CE5A1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F529B6FF21A7E783003CE5A1;
+					};
+				};
+			};
+			buildConfigurationList = F529B6FB21A7E783003CE5A1 /* Build configuration list for PBXProject "JDAmbientLight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F529B6F721A7E783003CE5A1;
+			productRefGroup = F529B70121A7E783003CE5A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F529B6FF21A7E783003CE5A1 /* JDAmbientLight */,
+				F529B71321A7E784003CE5A1 /* JDAmbientLightTests */,
+				F529B71E21A7E784003CE5A1 /* JDAmbientLightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F529B6FE21A7E783003CE5A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529B70E21A7E784003CE5A1 /* LaunchScreen.storyboard in Resources */,
+				F529B70B21A7E784003CE5A1 /* Assets.xcassets in Resources */,
+				F529B73621A7E9EE003CE5A1 /* SimpleVertexShader.glsl in Resources */,
+				F529B73721A7E9EE003CE5A1 /* summary.txt in Resources */,
+				F529B74121A7EA27003CE5A1 /* dungeon_01.png in Resources */,
+				F529B73521A7E9EE003CE5A1 /* SimpleFragmentShader.glsl in Resources */,
+				F529B70921A7E783003CE5A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B71221A7E784003CE5A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B71D21A7E784003CE5A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F529B6FC21A7E783003CE5A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529B73E21A7EA11003CE5A1 /* Model.swift in Sources */,
+				F529B73C21A7EA11003CE5A1 /* GLKMatrix+Array.swift in Sources */,
+				F529B73D21A7EA11003CE5A1 /* Vertex.swift in Sources */,
+				F529B70621A7E783003CE5A1 /* ViewController.swift in Sources */,
+				F529B70421A7E783003CE5A1 /* AppDelegate.swift in Sources */,
+				F529B74321A7EC1B003CE5A1 /* Cube.swift in Sources */,
+				F529B73F21A7EA11003CE5A1 /* BaseEffect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B71021A7E784003CE5A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529B71921A7E784003CE5A1 /* JDAmbientLightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B71B21A7E784003CE5A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529B72421A7E784003CE5A1 /* JDAmbientLightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F529B71621A7E784003CE5A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F529B6FF21A7E783003CE5A1 /* JDAmbientLight */;
+			targetProxy = F529B71521A7E784003CE5A1 /* PBXContainerItemProxy */;
+		};
+		F529B72121A7E784003CE5A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F529B6FF21A7E783003CE5A1 /* JDAmbientLight */;
+			targetProxy = F529B72021A7E784003CE5A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F529B70721A7E783003CE5A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F529B70821A7E783003CE5A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F529B70C21A7E784003CE5A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F529B70D21A7E784003CE5A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F529B72621A7E784003CE5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F529B72721A7E784003CE5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F529B72921A7E784003CE5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDAmbientLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDAmbientLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F529B72A21A7E784003CE5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDAmbientLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDAmbientLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F529B72C21A7E784003CE5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDAmbientLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDAmbientLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDAmbientLight.app/JDAmbientLight";
+			};
+			name = Debug;
+		};
+		F529B72D21A7E784003CE5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDAmbientLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDAmbientLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDAmbientLight.app/JDAmbientLight";
+			};
+			name = Release;
+		};
+		F529B72F21A7E784003CE5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDAmbientLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDAmbientLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDAmbientLight;
+			};
+			name = Debug;
+		};
+		F529B73021A7E784003CE5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDAmbientLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDAmbientLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDAmbientLight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F529B6FB21A7E783003CE5A1 /* Build configuration list for PBXProject "JDAmbientLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529B72621A7E784003CE5A1 /* Debug */,
+				F529B72721A7E784003CE5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F529B72821A7E784003CE5A1 /* Build configuration list for PBXNativeTarget "JDAmbientLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529B72921A7E784003CE5A1 /* Debug */,
+				F529B72A21A7E784003CE5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F529B72B21A7E784003CE5A1 /* Build configuration list for PBXNativeTarget "JDAmbientLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529B72C21A7E784003CE5A1 /* Debug */,
+				F529B72D21A7E784003CE5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F529B72E21A7E784003CE5A1 /* Build configuration list for PBXNativeTarget "JDAmbientLightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529B72F21A7E784003CE5A1 /* Debug */,
+				F529B73021A7E784003CE5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F529B6F821A7E783003CE5A1 /* Project object */;
+}

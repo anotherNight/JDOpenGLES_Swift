@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F529B75121A7F28E003CE5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B75021A7F28E003CE5A1 /* AppDelegate.swift */; };
+		F529B75621A7F28E003CE5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F529B75421A7F28E003CE5A1 /* Main.storyboard */; };
+		F529B75821A7F28F003CE5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F529B75721A7F28F003CE5A1 /* Assets.xcassets */; };
+		F529B75B21A7F28F003CE5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F529B75921A7F28F003CE5A1 /* LaunchScreen.storyboard */; };
+		F529B76621A7F290003CE5A1 /* JDSpecularLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B76521A7F290003CE5A1 /* JDSpecularLightTests.swift */; };
+		F529B77121A7F290003CE5A1 /* JDSpecularLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B77021A7F290003CE5A1 /* JDSpecularLightUITests.swift */; };
+		F529B78921A7F2BA003CE5A1 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B77E21A7F2B9003CE5A1 /* Vertex.swift */; };
+		F529B78A21A7F2BA003CE5A1 /* dungeon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = F529B77F21A7F2B9003CE5A1 /* dungeon_01.png */; };
+		F529B78B21A7F2BA003CE5A1 /* GLKMatrix+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B78021A7F2B9003CE5A1 /* GLKMatrix+Array.swift */; };
+		F529B78C21A7F2BA003CE5A1 /* BaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B78121A7F2B9003CE5A1 /* BaseEffect.swift */; };
+		F529B78D21A7F2BA003CE5A1 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B78221A7F2BA003CE5A1 /* Cube.swift */; };
+		F529B78E21A7F2BA003CE5A1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B78321A7F2BA003CE5A1 /* Model.swift */; };
+		F529B78F21A7F2BA003CE5A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529B78421A7F2BA003CE5A1 /* ViewController.swift */; };
+		F529B79021A7F2BA003CE5A1 /* SimpleFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F529B78621A7F2BA003CE5A1 /* SimpleFragmentShader.glsl */; };
+		F529B79121A7F2BA003CE5A1 /* SimpleVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F529B78721A7F2BA003CE5A1 /* SimpleVertexShader.glsl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F529B76221A7F290003CE5A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F529B74521A7F28E003CE5A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F529B74C21A7F28E003CE5A1;
+			remoteInfo = JDSpecularLight;
+		};
+		F529B76D21A7F290003CE5A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F529B74521A7F28E003CE5A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F529B74C21A7F28E003CE5A1;
+			remoteInfo = JDSpecularLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F529B74D21A7F28E003CE5A1 /* JDSpecularLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDSpecularLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529B75021A7F28E003CE5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F529B75521A7F28E003CE5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F529B75721A7F28F003CE5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F529B75A21A7F28F003CE5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F529B75C21A7F28F003CE5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F529B76121A7F290003CE5A1 /* JDSpecularLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDSpecularLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529B76521A7F290003CE5A1 /* JDSpecularLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDSpecularLightTests.swift; sourceTree = "<group>"; };
+		F529B76721A7F290003CE5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F529B76C21A7F290003CE5A1 /* JDSpecularLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDSpecularLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529B77021A7F290003CE5A1 /* JDSpecularLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDSpecularLightUITests.swift; sourceTree = "<group>"; };
+		F529B77221A7F290003CE5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F529B77E21A7F2B9003CE5A1 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		F529B77F21A7F2B9003CE5A1 /* dungeon_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_01.png; sourceTree = "<group>"; };
+		F529B78021A7F2B9003CE5A1 /* GLKMatrix+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GLKMatrix+Array.swift"; sourceTree = "<group>"; };
+		F529B78121A7F2B9003CE5A1 /* BaseEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEffect.swift; sourceTree = "<group>"; };
+		F529B78221A7F2BA003CE5A1 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		F529B78321A7F2BA003CE5A1 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F529B78421A7F2BA003CE5A1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F529B78621A7F2BA003CE5A1 /* SimpleFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragmentShader.glsl; sourceTree = "<group>"; };
+		F529B78721A7F2BA003CE5A1 /* SimpleVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertexShader.glsl; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F529B74A21A7F28E003CE5A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B75E21A7F290003CE5A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B76921A7F290003CE5A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F529B74421A7F28E003CE5A1 = {
+			isa = PBXGroup;
+			children = (
+				F529B74F21A7F28E003CE5A1 /* JDSpecularLight */,
+				F529B76421A7F290003CE5A1 /* JDSpecularLightTests */,
+				F529B76F21A7F290003CE5A1 /* JDSpecularLightUITests */,
+				F529B74E21A7F28E003CE5A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F529B74E21A7F28E003CE5A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F529B74D21A7F28E003CE5A1 /* JDSpecularLight.app */,
+				F529B76121A7F290003CE5A1 /* JDSpecularLightTests.xctest */,
+				F529B76C21A7F290003CE5A1 /* JDSpecularLightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F529B74F21A7F28E003CE5A1 /* JDSpecularLight */ = {
+			isa = PBXGroup;
+			children = (
+				F529B78521A7F2BA003CE5A1 /* shader */,
+				F529B78121A7F2B9003CE5A1 /* BaseEffect.swift */,
+				F529B78221A7F2BA003CE5A1 /* Cube.swift */,
+				F529B77F21A7F2B9003CE5A1 /* dungeon_01.png */,
+				F529B78021A7F2B9003CE5A1 /* GLKMatrix+Array.swift */,
+				F529B78321A7F2BA003CE5A1 /* Model.swift */,
+				F529B77E21A7F2B9003CE5A1 /* Vertex.swift */,
+				F529B78421A7F2BA003CE5A1 /* ViewController.swift */,
+				F529B75021A7F28E003CE5A1 /* AppDelegate.swift */,
+				F529B75421A7F28E003CE5A1 /* Main.storyboard */,
+				F529B75721A7F28F003CE5A1 /* Assets.xcassets */,
+				F529B75921A7F28F003CE5A1 /* LaunchScreen.storyboard */,
+				F529B75C21A7F28F003CE5A1 /* Info.plist */,
+			);
+			path = JDSpecularLight;
+			sourceTree = "<group>";
+		};
+		F529B76421A7F290003CE5A1 /* JDSpecularLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				F529B76521A7F290003CE5A1 /* JDSpecularLightTests.swift */,
+				F529B76721A7F290003CE5A1 /* Info.plist */,
+			);
+			path = JDSpecularLightTests;
+			sourceTree = "<group>";
+		};
+		F529B76F21A7F290003CE5A1 /* JDSpecularLightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F529B77021A7F290003CE5A1 /* JDSpecularLightUITests.swift */,
+				F529B77221A7F290003CE5A1 /* Info.plist */,
+			);
+			path = JDSpecularLightUITests;
+			sourceTree = "<group>";
+		};
+		F529B78521A7F2BA003CE5A1 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				F529B78621A7F2BA003CE5A1 /* SimpleFragmentShader.glsl */,
+				F529B78721A7F2BA003CE5A1 /* SimpleVertexShader.glsl */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F529B74C21A7F28E003CE5A1 /* JDSpecularLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F529B77521A7F290003CE5A1 /* Build configuration list for PBXNativeTarget "JDSpecularLight" */;
+			buildPhases = (
+				F529B74921A7F28E003CE5A1 /* Sources */,
+				F529B74A21A7F28E003CE5A1 /* Frameworks */,
+				F529B74B21A7F28E003CE5A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDSpecularLight;
+			productName = JDSpecularLight;
+			productReference = F529B74D21A7F28E003CE5A1 /* JDSpecularLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F529B76021A7F290003CE5A1 /* JDSpecularLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F529B77821A7F290003CE5A1 /* Build configuration list for PBXNativeTarget "JDSpecularLightTests" */;
+			buildPhases = (
+				F529B75D21A7F290003CE5A1 /* Sources */,
+				F529B75E21A7F290003CE5A1 /* Frameworks */,
+				F529B75F21A7F290003CE5A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F529B76321A7F290003CE5A1 /* PBXTargetDependency */,
+			);
+			name = JDSpecularLightTests;
+			productName = JDSpecularLightTests;
+			productReference = F529B76121A7F290003CE5A1 /* JDSpecularLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F529B76B21A7F290003CE5A1 /* JDSpecularLightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F529B77B21A7F290003CE5A1 /* Build configuration list for PBXNativeTarget "JDSpecularLightUITests" */;
+			buildPhases = (
+				F529B76821A7F290003CE5A1 /* Sources */,
+				F529B76921A7F290003CE5A1 /* Frameworks */,
+				F529B76A21A7F290003CE5A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F529B76E21A7F290003CE5A1 /* PBXTargetDependency */,
+			);
+			name = JDSpecularLightUITests;
+			productName = JDSpecularLightUITests;
+			productReference = F529B76C21A7F290003CE5A1 /* JDSpecularLightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F529B74521A7F28E003CE5A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = jundong;
+				TargetAttributes = {
+					F529B74C21A7F28E003CE5A1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F529B76021A7F290003CE5A1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F529B74C21A7F28E003CE5A1;
+					};
+					F529B76B21A7F290003CE5A1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F529B74C21A7F28E003CE5A1;
+					};
+				};
+			};
+			buildConfigurationList = F529B74821A7F28E003CE5A1 /* Build configuration list for PBXProject "JDSpecularLight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F529B74421A7F28E003CE5A1;
+			productRefGroup = F529B74E21A7F28E003CE5A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F529B74C21A7F28E003CE5A1 /* JDSpecularLight */,
+				F529B76021A7F290003CE5A1 /* JDSpecularLightTests */,
+				F529B76B21A7F290003CE5A1 /* JDSpecularLightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F529B74B21A7F28E003CE5A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529B79121A7F2BA003CE5A1 /* SimpleVertexShader.glsl in Resources */,
+				F529B75B21A7F28F003CE5A1 /* LaunchScreen.storyboard in Resources */,
+				F529B78A21A7F2BA003CE5A1 /* dungeon_01.png in Resources */,
+				F529B75821A7F28F003CE5A1 /* Assets.xcassets in Resources */,
+				F529B79021A7F2BA003CE5A1 /* SimpleFragmentShader.glsl in Resources */,
+				F529B75621A7F28E003CE5A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B75F21A7F290003CE5A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B76A21A7F290003CE5A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F529B74921A7F28E003CE5A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529B78B21A7F2BA003CE5A1 /* GLKMatrix+Array.swift in Sources */,
+				F529B78D21A7F2BA003CE5A1 /* Cube.swift in Sources */,
+				F529B75121A7F28E003CE5A1 /* AppDelegate.swift in Sources */,
+				F529B78E21A7F2BA003CE5A1 /* Model.swift in Sources */,
+				F529B78F21A7F2BA003CE5A1 /* ViewController.swift in Sources */,
+				F529B78921A7F2BA003CE5A1 /* Vertex.swift in Sources */,
+				F529B78C21A7F2BA003CE5A1 /* BaseEffect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B75D21A7F290003CE5A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529B76621A7F290003CE5A1 /* JDSpecularLightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529B76821A7F290003CE5A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529B77121A7F290003CE5A1 /* JDSpecularLightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F529B76321A7F290003CE5A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F529B74C21A7F28E003CE5A1 /* JDSpecularLight */;
+			targetProxy = F529B76221A7F290003CE5A1 /* PBXContainerItemProxy */;
+		};
+		F529B76E21A7F290003CE5A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F529B74C21A7F28E003CE5A1 /* JDSpecularLight */;
+			targetProxy = F529B76D21A7F290003CE5A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F529B75421A7F28E003CE5A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F529B75521A7F28E003CE5A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F529B75921A7F28F003CE5A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F529B75A21A7F28F003CE5A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F529B77321A7F290003CE5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F529B77421A7F290003CE5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F529B77621A7F290003CE5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDSpecularLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDSpecularLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F529B77721A7F290003CE5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDSpecularLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDSpecularLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F529B77921A7F290003CE5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDSpecularLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDSpecularLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDSpecularLight.app/JDSpecularLight";
+			};
+			name = Debug;
+		};
+		F529B77A21A7F290003CE5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDSpecularLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDSpecularLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDSpecularLight.app/JDSpecularLight";
+			};
+			name = Release;
+		};
+		F529B77C21A7F290003CE5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDSpecularLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDSpecularLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDSpecularLight;
+			};
+			name = Debug;
+		};
+		F529B77D21A7F290003CE5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDSpecularLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDSpecularLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDSpecularLight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F529B74821A7F28E003CE5A1 /* Build configuration list for PBXProject "JDSpecularLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529B77321A7F290003CE5A1 /* Debug */,
+				F529B77421A7F290003CE5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F529B77521A7F290003CE5A1 /* Build configuration list for PBXNativeTarget "JDSpecularLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529B77621A7F290003CE5A1 /* Debug */,
+				F529B77721A7F290003CE5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F529B77821A7F290003CE5A1 /* Build configuration list for PBXNativeTarget "JDSpecularLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529B77921A7F290003CE5A1 /* Debug */,
+				F529B77A21A7F290003CE5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F529B77B21A7F290003CE5A1 /* Build configuration list for PBXNativeTarget "JDSpecularLightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529B77C21A7F290003CE5A1 /* Debug */,
+				F529B77D21A7F290003CE5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F529B74521A7F28E003CE5A1 /* Project object */;
+}

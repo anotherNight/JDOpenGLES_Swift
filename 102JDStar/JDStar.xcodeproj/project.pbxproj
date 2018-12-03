@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F56D32AC21A53A8900DD9B13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D32AB21A53A8900DD9B13 /* AppDelegate.swift */; };
+		F56D32AE21A53A8900DD9B13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D32AD21A53A8900DD9B13 /* ViewController.swift */; };
+		F56D32B121A53A8900DD9B13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56D32AF21A53A8900DD9B13 /* Main.storyboard */; };
+		F56D32B321A53A8B00DD9B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56D32B221A53A8B00DD9B13 /* Assets.xcassets */; };
+		F56D32B621A53A8B00DD9B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56D32B421A53A8B00DD9B13 /* LaunchScreen.storyboard */; };
+		F56D32C121A53A8B00DD9B13 /* JDStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D32C021A53A8B00DD9B13 /* JDStarTests.swift */; };
+		F56D32CC21A53A8B00DD9B13 /* JDStarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D32CB21A53A8B00DD9B13 /* JDStarUITests.swift */; };
+		F56D32DB21A53AC800DD9B13 /* SimpleFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F56D32D921A53AC800DD9B13 /* SimpleFragmentShader.glsl */; };
+		F56D32DC21A53AC800DD9B13 /* SimpleVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F56D32DA21A53AC800DD9B13 /* SimpleVertexShader.glsl */; };
+		F56D32DE21A53AD800DD9B13 /* BaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D32DD21A53AD800DD9B13 /* BaseEffect.swift */; };
+		F56D32E021A53AE000DD9B13 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D32DF21A53AE000DD9B13 /* Vertex.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F56D32BD21A53A8B00DD9B13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56D32A021A53A8900DD9B13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56D32A721A53A8900DD9B13;
+			remoteInfo = JDStar;
+		};
+		F56D32C821A53A8B00DD9B13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56D32A021A53A8900DD9B13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56D32A721A53A8900DD9B13;
+			remoteInfo = JDStar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F56D32A821A53A8900DD9B13 /* JDStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56D32AB21A53A8900DD9B13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F56D32AD21A53A8900DD9B13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F56D32B021A53A8900DD9B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F56D32B221A53A8B00DD9B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F56D32B521A53A8B00DD9B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F56D32B721A53A8B00DD9B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56D32BC21A53A8B00DD9B13 /* JDStarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDStarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56D32C021A53A8B00DD9B13 /* JDStarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDStarTests.swift; sourceTree = "<group>"; };
+		F56D32C221A53A8B00DD9B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56D32C721A53A8B00DD9B13 /* JDStarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDStarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56D32CB21A53A8B00DD9B13 /* JDStarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDStarUITests.swift; sourceTree = "<group>"; };
+		F56D32CD21A53A8B00DD9B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56D32D921A53AC800DD9B13 /* SimpleFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragmentShader.glsl; sourceTree = "<group>"; };
+		F56D32DA21A53AC800DD9B13 /* SimpleVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertexShader.glsl; sourceTree = "<group>"; };
+		F56D32DD21A53AD800DD9B13 /* BaseEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEffect.swift; sourceTree = "<group>"; };
+		F56D32DF21A53AE000DD9B13 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F56D32A521A53A8900DD9B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56D32B921A53A8B00DD9B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56D32C421A53A8B00DD9B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F56D329F21A53A8900DD9B13 = {
+			isa = PBXGroup;
+			children = (
+				F56D32AA21A53A8900DD9B13 /* JDStar */,
+				F56D32BF21A53A8B00DD9B13 /* JDStarTests */,
+				F56D32CA21A53A8B00DD9B13 /* JDStarUITests */,
+				F56D32A921A53A8900DD9B13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F56D32A921A53A8900DD9B13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F56D32A821A53A8900DD9B13 /* JDStar.app */,
+				F56D32BC21A53A8B00DD9B13 /* JDStarTests.xctest */,
+				F56D32C721A53A8B00DD9B13 /* JDStarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F56D32AA21A53A8900DD9B13 /* JDStar */ = {
+			isa = PBXGroup;
+			children = (
+				F56D32D921A53AC800DD9B13 /* SimpleFragmentShader.glsl */,
+				F56D32DA21A53AC800DD9B13 /* SimpleVertexShader.glsl */,
+				F56D32DD21A53AD800DD9B13 /* BaseEffect.swift */,
+				F56D32DF21A53AE000DD9B13 /* Vertex.swift */,
+				F56D32AB21A53A8900DD9B13 /* AppDelegate.swift */,
+				F56D32AD21A53A8900DD9B13 /* ViewController.swift */,
+				F56D32AF21A53A8900DD9B13 /* Main.storyboard */,
+				F56D32B221A53A8B00DD9B13 /* Assets.xcassets */,
+				F56D32B421A53A8B00DD9B13 /* LaunchScreen.storyboard */,
+				F56D32B721A53A8B00DD9B13 /* Info.plist */,
+			);
+			path = JDStar;
+			sourceTree = "<group>";
+		};
+		F56D32BF21A53A8B00DD9B13 /* JDStarTests */ = {
+			isa = PBXGroup;
+			children = (
+				F56D32C021A53A8B00DD9B13 /* JDStarTests.swift */,
+				F56D32C221A53A8B00DD9B13 /* Info.plist */,
+			);
+			path = JDStarTests;
+			sourceTree = "<group>";
+		};
+		F56D32CA21A53A8B00DD9B13 /* JDStarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F56D32CB21A53A8B00DD9B13 /* JDStarUITests.swift */,
+				F56D32CD21A53A8B00DD9B13 /* Info.plist */,
+			);
+			path = JDStarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F56D32A721A53A8900DD9B13 /* JDStar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56D32D021A53A8B00DD9B13 /* Build configuration list for PBXNativeTarget "JDStar" */;
+			buildPhases = (
+				F56D32A421A53A8900DD9B13 /* Sources */,
+				F56D32A521A53A8900DD9B13 /* Frameworks */,
+				F56D32A621A53A8900DD9B13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDStar;
+			productName = JDStar;
+			productReference = F56D32A821A53A8900DD9B13 /* JDStar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F56D32BB21A53A8B00DD9B13 /* JDStarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56D32D321A53A8B00DD9B13 /* Build configuration list for PBXNativeTarget "JDStarTests" */;
+			buildPhases = (
+				F56D32B821A53A8B00DD9B13 /* Sources */,
+				F56D32B921A53A8B00DD9B13 /* Frameworks */,
+				F56D32BA21A53A8B00DD9B13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F56D32BE21A53A8B00DD9B13 /* PBXTargetDependency */,
+			);
+			name = JDStarTests;
+			productName = JDStarTests;
+			productReference = F56D32BC21A53A8B00DD9B13 /* JDStarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F56D32C621A53A8B00DD9B13 /* JDStarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56D32D621A53A8B00DD9B13 /* Build configuration list for PBXNativeTarget "JDStarUITests" */;
+			buildPhases = (
+				F56D32C321A53A8B00DD9B13 /* Sources */,
+				F56D32C421A53A8B00DD9B13 /* Frameworks */,
+				F56D32C521A53A8B00DD9B13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F56D32C921A53A8B00DD9B13 /* PBXTargetDependency */,
+			);
+			name = JDStarUITests;
+			productName = JDStarUITests;
+			productReference = F56D32C721A53A8B00DD9B13 /* JDStarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F56D32A021A53A8900DD9B13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = jundong;
+				TargetAttributes = {
+					F56D32A721A53A8900DD9B13 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F56D32BB21A53A8B00DD9B13 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F56D32A721A53A8900DD9B13;
+					};
+					F56D32C621A53A8B00DD9B13 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F56D32A721A53A8900DD9B13;
+					};
+				};
+			};
+			buildConfigurationList = F56D32A321A53A8900DD9B13 /* Build configuration list for PBXProject "JDStar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F56D329F21A53A8900DD9B13;
+			productRefGroup = F56D32A921A53A8900DD9B13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F56D32A721A53A8900DD9B13 /* JDStar */,
+				F56D32BB21A53A8B00DD9B13 /* JDStarTests */,
+				F56D32C621A53A8B00DD9B13 /* JDStarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F56D32A621A53A8900DD9B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56D32B621A53A8B00DD9B13 /* LaunchScreen.storyboard in Resources */,
+				F56D32B321A53A8B00DD9B13 /* Assets.xcassets in Resources */,
+				F56D32DC21A53AC800DD9B13 /* SimpleVertexShader.glsl in Resources */,
+				F56D32DB21A53AC800DD9B13 /* SimpleFragmentShader.glsl in Resources */,
+				F56D32B121A53A8900DD9B13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56D32BA21A53A8B00DD9B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56D32C521A53A8B00DD9B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F56D32A421A53A8900DD9B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56D32AE21A53A8900DD9B13 /* ViewController.swift in Sources */,
+				F56D32E021A53AE000DD9B13 /* Vertex.swift in Sources */,
+				F56D32AC21A53A8900DD9B13 /* AppDelegate.swift in Sources */,
+				F56D32DE21A53AD800DD9B13 /* BaseEffect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56D32B821A53A8B00DD9B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56D32C121A53A8B00DD9B13 /* JDStarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56D32C321A53A8B00DD9B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56D32CC21A53A8B00DD9B13 /* JDStarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F56D32BE21A53A8B00DD9B13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F56D32A721A53A8900DD9B13 /* JDStar */;
+			targetProxy = F56D32BD21A53A8B00DD9B13 /* PBXContainerItemProxy */;
+		};
+		F56D32C921A53A8B00DD9B13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F56D32A721A53A8900DD9B13 /* JDStar */;
+			targetProxy = F56D32C821A53A8B00DD9B13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F56D32AF21A53A8900DD9B13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56D32B021A53A8900DD9B13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F56D32B421A53A8B00DD9B13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56D32B521A53A8B00DD9B13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F56D32CE21A53A8B00DD9B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F56D32CF21A53A8B00DD9B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F56D32D121A53A8B00DD9B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDStar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDStar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wdeprecated-declarations";
+			};
+			name = Debug;
+		};
+		F56D32D221A53A8B00DD9B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDStar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDStar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wdeprecated-declarations";
+			};
+			name = Release;
+		};
+		F56D32D421A53A8B00DD9B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDStarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDStarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDStar.app/JDStar";
+			};
+			name = Debug;
+		};
+		F56D32D521A53A8B00DD9B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDStarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDStarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDStar.app/JDStar";
+			};
+			name = Release;
+		};
+		F56D32D721A53A8B00DD9B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDStarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDStarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDStar;
+			};
+			name = Debug;
+		};
+		F56D32D821A53A8B00DD9B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDStarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDStarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDStar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F56D32A321A53A8900DD9B13 /* Build configuration list for PBXProject "JDStar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56D32CE21A53A8B00DD9B13 /* Debug */,
+				F56D32CF21A53A8B00DD9B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56D32D021A53A8B00DD9B13 /* Build configuration list for PBXNativeTarget "JDStar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56D32D121A53A8B00DD9B13 /* Debug */,
+				F56D32D221A53A8B00DD9B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56D32D321A53A8B00DD9B13 /* Build configuration list for PBXNativeTarget "JDStarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56D32D421A53A8B00DD9B13 /* Debug */,
+				F56D32D521A53A8B00DD9B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56D32D621A53A8B00DD9B13 /* Build configuration list for PBXNativeTarget "JDStarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56D32D721A53A8B00DD9B13 /* Debug */,
+				F56D32D821A53A8B00DD9B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F56D32A021A53A8900DD9B13 /* Project object */;
+}
