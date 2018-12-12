@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5C7302D21C1194200166030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7302C21C1194200166030 /* AppDelegate.swift */; };
+		F5C7302F21C1194200166030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7302E21C1194200166030 /* ViewController.swift */; };
+		F5C7303221C1194200166030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C7303021C1194200166030 /* Main.storyboard */; };
+		F5C7303421C1194400166030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C7303321C1194400166030 /* Assets.xcassets */; };
+		F5C7303721C1194400166030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C7303521C1194400166030 /* LaunchScreen.storyboard */; };
+		F5C7304221C1194400166030 /* JDGLESShaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7304121C1194400166030 /* JDGLESShaderTests.swift */; };
+		F5C7304D21C1194400166030 /* JDGLESShaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7304C21C1194400166030 /* JDGLESShaderUITests.swift */; };
+		F5C7305D21C1195D00166030 /* vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F5C7305B21C1195D00166030 /* vert.glsl */; };
+		F5C7305E21C1195D00166030 /* frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F5C7305C21C1195D00166030 /* frag.glsl */; };
+		F5C7306221C1199000166030 /* GLUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F5C7306121C1199000166030 /* GLUtil.c */; };
+		F5C7306821C11BEA00166030 /* OpenGLESView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7306721C11BEA00166030 /* OpenGLESView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5C7303E21C1194400166030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5C7302121C1194200166030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C7302821C1194200166030;
+			remoteInfo = JDGLESShader;
+		};
+		F5C7304921C1194400166030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5C7302121C1194200166030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C7302821C1194200166030;
+			remoteInfo = JDGLESShader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5C7302921C1194200166030 /* JDGLESShader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDGLESShader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C7302C21C1194200166030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5C7302E21C1194200166030 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5C7303121C1194200166030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5C7303321C1194400166030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5C7303621C1194400166030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5C7303821C1194400166030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C7303D21C1194400166030 /* JDGLESShaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDGLESShaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C7304121C1194400166030 /* JDGLESShaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDGLESShaderTests.swift; sourceTree = "<group>"; };
+		F5C7304321C1194400166030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C7304821C1194400166030 /* JDGLESShaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDGLESShaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C7304C21C1194400166030 /* JDGLESShaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDGLESShaderUITests.swift; sourceTree = "<group>"; };
+		F5C7304E21C1194400166030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C7305B21C1195D00166030 /* vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vert.glsl; sourceTree = "<group>"; };
+		F5C7305C21C1195D00166030 /* frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frag.glsl; sourceTree = "<group>"; };
+		F5C7306021C1199000166030 /* GLUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUtil.h; sourceTree = "<group>"; };
+		F5C7306121C1199000166030 /* GLUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLUtil.c; sourceTree = "<group>"; };
+		F5C7306621C119F300166030 /* JDGLESShader_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGLESShader_Bridging_Header.h; sourceTree = "<group>"; };
+		F5C7306721C11BEA00166030 /* OpenGLESView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLESView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5C7302621C1194200166030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C7303A21C1194400166030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C7304521C1194400166030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5C7302021C1194200166030 = {
+			isa = PBXGroup;
+			children = (
+				F5C7302B21C1194200166030 /* JDGLESShader */,
+				F5C7304021C1194400166030 /* JDGLESShaderTests */,
+				F5C7304B21C1194400166030 /* JDGLESShaderUITests */,
+				F5C7302A21C1194200166030 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5C7302A21C1194200166030 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7302921C1194200166030 /* JDGLESShader.app */,
+				F5C7303D21C1194400166030 /* JDGLESShaderTests.xctest */,
+				F5C7304821C1194400166030 /* JDGLESShaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5C7302B21C1194200166030 /* JDGLESShader */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7305F21C1199000166030 /* Utils */,
+				F5C7305A21C1195D00166030 /* Shader */,
+				F5C7302C21C1194200166030 /* AppDelegate.swift */,
+				F5C7302E21C1194200166030 /* ViewController.swift */,
+				F5C7306721C11BEA00166030 /* OpenGLESView.swift */,
+				F5C7303021C1194200166030 /* Main.storyboard */,
+				F5C7303321C1194400166030 /* Assets.xcassets */,
+				F5C7303521C1194400166030 /* LaunchScreen.storyboard */,
+				F5C7303821C1194400166030 /* Info.plist */,
+			);
+			path = JDGLESShader;
+			sourceTree = "<group>";
+		};
+		F5C7304021C1194400166030 /* JDGLESShaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7304121C1194400166030 /* JDGLESShaderTests.swift */,
+				F5C7304321C1194400166030 /* Info.plist */,
+			);
+			path = JDGLESShaderTests;
+			sourceTree = "<group>";
+		};
+		F5C7304B21C1194400166030 /* JDGLESShaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7304C21C1194400166030 /* JDGLESShaderUITests.swift */,
+				F5C7304E21C1194400166030 /* Info.plist */,
+			);
+			path = JDGLESShaderUITests;
+			sourceTree = "<group>";
+		};
+		F5C7305A21C1195D00166030 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7305B21C1195D00166030 /* vert.glsl */,
+				F5C7305C21C1195D00166030 /* frag.glsl */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		F5C7305F21C1199000166030 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7306021C1199000166030 /* GLUtil.h */,
+				F5C7306121C1199000166030 /* GLUtil.c */,
+				F5C7306621C119F300166030 /* JDGLESShader_Bridging_Header.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5C7302821C1194200166030 /* JDGLESShader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C7305121C1194400166030 /* Build configuration list for PBXNativeTarget "JDGLESShader" */;
+			buildPhases = (
+				F5C7302521C1194200166030 /* Sources */,
+				F5C7302621C1194200166030 /* Frameworks */,
+				F5C7302721C1194200166030 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDGLESShader;
+			productName = JDGLESShader;
+			productReference = F5C7302921C1194200166030 /* JDGLESShader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5C7303C21C1194400166030 /* JDGLESShaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C7305421C1194400166030 /* Build configuration list for PBXNativeTarget "JDGLESShaderTests" */;
+			buildPhases = (
+				F5C7303921C1194400166030 /* Sources */,
+				F5C7303A21C1194400166030 /* Frameworks */,
+				F5C7303B21C1194400166030 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5C7303F21C1194400166030 /* PBXTargetDependency */,
+			);
+			name = JDGLESShaderTests;
+			productName = JDGLESShaderTests;
+			productReference = F5C7303D21C1194400166030 /* JDGLESShaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5C7304721C1194400166030 /* JDGLESShaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C7305721C1194400166030 /* Build configuration list for PBXNativeTarget "JDGLESShaderUITests" */;
+			buildPhases = (
+				F5C7304421C1194400166030 /* Sources */,
+				F5C7304521C1194400166030 /* Frameworks */,
+				F5C7304621C1194400166030 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5C7304A21C1194400166030 /* PBXTargetDependency */,
+			);
+			name = JDGLESShaderUITests;
+			productName = JDGLESShaderUITests;
+			productReference = F5C7304821C1194400166030 /* JDGLESShaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5C7302121C1194200166030 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = jundong;
+				TargetAttributes = {
+					F5C7302821C1194200166030 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F5C7303C21C1194400166030 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F5C7302821C1194200166030;
+					};
+					F5C7304721C1194400166030 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F5C7302821C1194200166030;
+					};
+				};
+			};
+			buildConfigurationList = F5C7302421C1194200166030 /* Build configuration list for PBXProject "JDGLESShader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5C7302021C1194200166030;
+			productRefGroup = F5C7302A21C1194200166030 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5C7302821C1194200166030 /* JDGLESShader */,
+				F5C7303C21C1194400166030 /* JDGLESShaderTests */,
+				F5C7304721C1194400166030 /* JDGLESShaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5C7302721C1194200166030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C7303721C1194400166030 /* LaunchScreen.storyboard in Resources */,
+				F5C7303421C1194400166030 /* Assets.xcassets in Resources */,
+				F5C7305D21C1195D00166030 /* vert.glsl in Resources */,
+				F5C7305E21C1195D00166030 /* frag.glsl in Resources */,
+				F5C7303221C1194200166030 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C7303B21C1194400166030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C7304621C1194400166030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5C7302521C1194200166030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C7306221C1199000166030 /* GLUtil.c in Sources */,
+				F5C7306821C11BEA00166030 /* OpenGLESView.swift in Sources */,
+				F5C7302F21C1194200166030 /* ViewController.swift in Sources */,
+				F5C7302D21C1194200166030 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C7303921C1194400166030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C7304221C1194400166030 /* JDGLESShaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C7304421C1194400166030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C7304D21C1194400166030 /* JDGLESShaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5C7303F21C1194400166030 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5C7302821C1194200166030 /* JDGLESShader */;
+			targetProxy = F5C7303E21C1194400166030 /* PBXContainerItemProxy */;
+		};
+		F5C7304A21C1194400166030 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5C7302821C1194200166030 /* JDGLESShader */;
+			targetProxy = F5C7304921C1194400166030 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5C7303021C1194200166030 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5C7303121C1194200166030 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5C7303521C1194400166030 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5C7303621C1194400166030 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5C7304F21C1194400166030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5C7305021C1194400166030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5C7305221C1194400166030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESShader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESShader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/JDGLESShader/Utils/JDGLESShader_Bridging_Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5C7305321C1194400166030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESShader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESShader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/JDGLESShader/Utils/JDGLESShader_Bridging_Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5C7305521C1194400166030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESShaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESShaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDGLESShader.app/JDGLESShader";
+			};
+			name = Debug;
+		};
+		F5C7305621C1194400166030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESShaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESShaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDGLESShader.app/JDGLESShader";
+			};
+			name = Release;
+		};
+		F5C7305821C1194400166030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESShaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESShaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDGLESShader;
+			};
+			name = Debug;
+		};
+		F5C7305921C1194400166030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESShaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESShaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDGLESShader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5C7302421C1194200166030 /* Build configuration list for PBXProject "JDGLESShader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C7304F21C1194400166030 /* Debug */,
+				F5C7305021C1194400166030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5C7305121C1194400166030 /* Build configuration list for PBXNativeTarget "JDGLESShader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C7305221C1194400166030 /* Debug */,
+				F5C7305321C1194400166030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5C7305421C1194400166030 /* Build configuration list for PBXNativeTarget "JDGLESShaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C7305521C1194400166030 /* Debug */,
+				F5C7305621C1194400166030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5C7305721C1194400166030 /* Build configuration list for PBXNativeTarget "JDGLESShaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C7305821C1194400166030 /* Debug */,
+				F5C7305921C1194400166030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5C7302121C1194200166030 /* Project object */;
+}
