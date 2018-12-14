@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F51EBB1C21C39A3B005E3501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EBB1B21C39A3B005E3501 /* AppDelegate.swift */; };
+		F51EBB1E21C39A3B005E3501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EBB1D21C39A3B005E3501 /* ViewController.swift */; };
+		F51EBB2121C39A3B005E3501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51EBB1F21C39A3B005E3501 /* Main.storyboard */; };
+		F51EBB2321C39A3C005E3501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51EBB2221C39A3C005E3501 /* Assets.xcassets */; };
+		F51EBB2621C39A3C005E3501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51EBB2421C39A3C005E3501 /* LaunchScreen.storyboard */; };
+		F51EBB3121C39A3C005E3501 /* JDGLESAVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EBB3021C39A3C005E3501 /* JDGLESAVOTests.swift */; };
+		F51EBB3C21C39A3C005E3501 /* JDGLESAVOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EBB3B21C39A3C005E3501 /* JDGLESAVOUITests.swift */; };
+		F51EBB4D21C39A5A005E3501 /* GLUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F51EBB4C21C39A5A005E3501 /* GLUtil.c */; };
+		F51EBB5121C3A481005E3501 /* vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F51EBB4F21C3A480005E3501 /* vert.glsl */; };
+		F51EBB5221C3A481005E3501 /* frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F51EBB5021C3A480005E3501 /* frag.glsl */; };
+		F51EBB5421C3A493005E3501 /* OpenGLESView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EBB5321C3A493005E3501 /* OpenGLESView.swift */; };
+		F51EBB5621C3A54F005E3501 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EBB5521C3A54F005E3501 /* Vertex.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F51EBB2D21C39A3C005E3501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F51EBB1021C39A3B005E3501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F51EBB1721C39A3B005E3501;
+			remoteInfo = JDGLESAVO;
+		};
+		F51EBB3821C39A3C005E3501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F51EBB1021C39A3B005E3501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F51EBB1721C39A3B005E3501;
+			remoteInfo = JDGLESAVO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F51EBB1821C39A3B005E3501 /* JDGLESAVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDGLESAVO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51EBB1B21C39A3B005E3501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F51EBB1D21C39A3B005E3501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F51EBB2021C39A3B005E3501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F51EBB2221C39A3C005E3501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F51EBB2521C39A3C005E3501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F51EBB2721C39A3C005E3501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F51EBB2C21C39A3C005E3501 /* JDGLESAVOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDGLESAVOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51EBB3021C39A3C005E3501 /* JDGLESAVOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDGLESAVOTests.swift; sourceTree = "<group>"; };
+		F51EBB3221C39A3C005E3501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F51EBB3721C39A3C005E3501 /* JDGLESAVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDGLESAVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51EBB3B21C39A3C005E3501 /* JDGLESAVOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDGLESAVOUITests.swift; sourceTree = "<group>"; };
+		F51EBB3D21C39A3C005E3501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F51EBB4A21C39A59005E3501 /* JDGLESAVO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JDGLESAVO-Bridging-Header.h"; sourceTree = "<group>"; };
+		F51EBB4B21C39A5A005E3501 /* GLUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLUtil.h; sourceTree = "<group>"; };
+		F51EBB4C21C39A5A005E3501 /* GLUtil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GLUtil.c; sourceTree = "<group>"; };
+		F51EBB4F21C3A480005E3501 /* vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vert.glsl; path = ../../../301JDGLESShader/JDGLESShader/Shader/vert.glsl; sourceTree = "<group>"; };
+		F51EBB5021C3A480005E3501 /* frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = frag.glsl; path = ../../../301JDGLESShader/JDGLESShader/Shader/frag.glsl; sourceTree = "<group>"; };
+		F51EBB5321C3A493005E3501 /* OpenGLESView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLESView.swift; sourceTree = "<group>"; };
+		F51EBB5521C3A54F005E3501 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F51EBB1521C39A3B005E3501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51EBB2921C39A3C005E3501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51EBB3421C39A3C005E3501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F51EBB0F21C39A3B005E3501 = {
+			isa = PBXGroup;
+			children = (
+				F51EBB1A21C39A3B005E3501 /* JDGLESAVO */,
+				F51EBB2F21C39A3C005E3501 /* JDGLESAVOTests */,
+				F51EBB3A21C39A3C005E3501 /* JDGLESAVOUITests */,
+				F51EBB1921C39A3B005E3501 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F51EBB1921C39A3B005E3501 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F51EBB1821C39A3B005E3501 /* JDGLESAVO.app */,
+				F51EBB2C21C39A3C005E3501 /* JDGLESAVOTests.xctest */,
+				F51EBB3721C39A3C005E3501 /* JDGLESAVOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F51EBB1A21C39A3B005E3501 /* JDGLESAVO */ = {
+			isa = PBXGroup;
+			children = (
+				F51EBB4E21C3A468005E3501 /* shader */,
+				F51EBB4921C39A48005E3501 /* Utils */,
+				F51EBB1B21C39A3B005E3501 /* AppDelegate.swift */,
+				F51EBB1D21C39A3B005E3501 /* ViewController.swift */,
+				F51EBB5321C3A493005E3501 /* OpenGLESView.swift */,
+				F51EBB5521C3A54F005E3501 /* Vertex.swift */,
+				F51EBB1F21C39A3B005E3501 /* Main.storyboard */,
+				F51EBB2221C39A3C005E3501 /* Assets.xcassets */,
+				F51EBB2421C39A3C005E3501 /* LaunchScreen.storyboard */,
+				F51EBB2721C39A3C005E3501 /* Info.plist */,
+			);
+			path = JDGLESAVO;
+			sourceTree = "<group>";
+		};
+		F51EBB2F21C39A3C005E3501 /* JDGLESAVOTests */ = {
+			isa = PBXGroup;
+			children = (
+				F51EBB3021C39A3C005E3501 /* JDGLESAVOTests.swift */,
+				F51EBB3221C39A3C005E3501 /* Info.plist */,
+			);
+			path = JDGLESAVOTests;
+			sourceTree = "<group>";
+		};
+		F51EBB3A21C39A3C005E3501 /* JDGLESAVOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F51EBB3B21C39A3C005E3501 /* JDGLESAVOUITests.swift */,
+				F51EBB3D21C39A3C005E3501 /* Info.plist */,
+			);
+			path = JDGLESAVOUITests;
+			sourceTree = "<group>";
+		};
+		F51EBB4921C39A48005E3501 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F51EBB4B21C39A5A005E3501 /* GLUtil.h */,
+				F51EBB4C21C39A5A005E3501 /* GLUtil.c */,
+				F51EBB4A21C39A59005E3501 /* JDGLESAVO-Bridging-Header.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F51EBB4E21C3A468005E3501 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				F51EBB5021C3A480005E3501 /* frag.glsl */,
+				F51EBB4F21C3A480005E3501 /* vert.glsl */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F51EBB1721C39A3B005E3501 /* JDGLESAVO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F51EBB4021C39A3C005E3501 /* Build configuration list for PBXNativeTarget "JDGLESAVO" */;
+			buildPhases = (
+				F51EBB1421C39A3B005E3501 /* Sources */,
+				F51EBB1521C39A3B005E3501 /* Frameworks */,
+				F51EBB1621C39A3B005E3501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDGLESAVO;
+			productName = JDGLESAVO;
+			productReference = F51EBB1821C39A3B005E3501 /* JDGLESAVO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F51EBB2B21C39A3C005E3501 /* JDGLESAVOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F51EBB4321C39A3C005E3501 /* Build configuration list for PBXNativeTarget "JDGLESAVOTests" */;
+			buildPhases = (
+				F51EBB2821C39A3C005E3501 /* Sources */,
+				F51EBB2921C39A3C005E3501 /* Frameworks */,
+				F51EBB2A21C39A3C005E3501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F51EBB2E21C39A3C005E3501 /* PBXTargetDependency */,
+			);
+			name = JDGLESAVOTests;
+			productName = JDGLESAVOTests;
+			productReference = F51EBB2C21C39A3C005E3501 /* JDGLESAVOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F51EBB3621C39A3C005E3501 /* JDGLESAVOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F51EBB4621C39A3C005E3501 /* Build configuration list for PBXNativeTarget "JDGLESAVOUITests" */;
+			buildPhases = (
+				F51EBB3321C39A3C005E3501 /* Sources */,
+				F51EBB3421C39A3C005E3501 /* Frameworks */,
+				F51EBB3521C39A3C005E3501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F51EBB3921C39A3C005E3501 /* PBXTargetDependency */,
+			);
+			name = JDGLESAVOUITests;
+			productName = JDGLESAVOUITests;
+			productReference = F51EBB3721C39A3C005E3501 /* JDGLESAVOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F51EBB1021C39A3B005E3501 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = jundong;
+				TargetAttributes = {
+					F51EBB1721C39A3B005E3501 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					F51EBB2B21C39A3C005E3501 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F51EBB1721C39A3B005E3501;
+					};
+					F51EBB3621C39A3C005E3501 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F51EBB1721C39A3B005E3501;
+					};
+				};
+			};
+			buildConfigurationList = F51EBB1321C39A3B005E3501 /* Build configuration list for PBXProject "JDGLESAVO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F51EBB0F21C39A3B005E3501;
+			productRefGroup = F51EBB1921C39A3B005E3501 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F51EBB1721C39A3B005E3501 /* JDGLESAVO */,
+				F51EBB2B21C39A3C005E3501 /* JDGLESAVOTests */,
+				F51EBB3621C39A3C005E3501 /* JDGLESAVOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F51EBB1621C39A3B005E3501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51EBB2621C39A3C005E3501 /* LaunchScreen.storyboard in Resources */,
+				F51EBB2321C39A3C005E3501 /* Assets.xcassets in Resources */,
+				F51EBB5121C3A481005E3501 /* vert.glsl in Resources */,
+				F51EBB5221C3A481005E3501 /* frag.glsl in Resources */,
+				F51EBB2121C39A3B005E3501 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51EBB2A21C39A3C005E3501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51EBB3521C39A3C005E3501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F51EBB1421C39A3B005E3501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51EBB4D21C39A5A005E3501 /* GLUtil.c in Sources */,
+				F51EBB5421C3A493005E3501 /* OpenGLESView.swift in Sources */,
+				F51EBB1E21C39A3B005E3501 /* ViewController.swift in Sources */,
+				F51EBB5621C3A54F005E3501 /* Vertex.swift in Sources */,
+				F51EBB1C21C39A3B005E3501 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51EBB2821C39A3C005E3501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51EBB3121C39A3C005E3501 /* JDGLESAVOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51EBB3321C39A3C005E3501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51EBB3C21C39A3C005E3501 /* JDGLESAVOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F51EBB2E21C39A3C005E3501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F51EBB1721C39A3B005E3501 /* JDGLESAVO */;
+			targetProxy = F51EBB2D21C39A3C005E3501 /* PBXContainerItemProxy */;
+		};
+		F51EBB3921C39A3C005E3501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F51EBB1721C39A3B005E3501 /* JDGLESAVO */;
+			targetProxy = F51EBB3821C39A3C005E3501 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F51EBB1F21C39A3B005E3501 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51EBB2021C39A3B005E3501 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F51EBB2421C39A3C005E3501 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51EBB2521C39A3C005E3501 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F51EBB3E21C39A3C005E3501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F51EBB3F21C39A3C005E3501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F51EBB4121C39A3C005E3501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESAVO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESAVO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JDGLESAVO/Utils/JDGLESAVO-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F51EBB4221C39A3C005E3501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESAVO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESAVO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JDGLESAVO/Utils/JDGLESAVO-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F51EBB4421C39A3C005E3501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESAVOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESAVOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDGLESAVO.app/JDGLESAVO";
+			};
+			name = Debug;
+		};
+		F51EBB4521C39A3C005E3501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESAVOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESAVOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDGLESAVO.app/JDGLESAVO";
+			};
+			name = Release;
+		};
+		F51EBB4721C39A3C005E3501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESAVOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESAVOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDGLESAVO;
+			};
+			name = Debug;
+		};
+		F51EBB4821C39A3C005E3501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL79FLL337;
+				INFOPLIST_FILE = JDGLESAVOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanzi.JDGLESAVOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JDGLESAVO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F51EBB1321C39A3B005E3501 /* Build configuration list for PBXProject "JDGLESAVO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51EBB3E21C39A3C005E3501 /* Debug */,
+				F51EBB3F21C39A3C005E3501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F51EBB4021C39A3C005E3501 /* Build configuration list for PBXNativeTarget "JDGLESAVO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51EBB4121C39A3C005E3501 /* Debug */,
+				F51EBB4221C39A3C005E3501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F51EBB4321C39A3C005E3501 /* Build configuration list for PBXNativeTarget "JDGLESAVOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51EBB4421C39A3C005E3501 /* Debug */,
+				F51EBB4521C39A3C005E3501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F51EBB4621C39A3C005E3501 /* Build configuration list for PBXNativeTarget "JDGLESAVOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51EBB4721C39A3C005E3501 /* Debug */,
+				F51EBB4821C39A3C005E3501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F51EBB1021C39A3B005E3501 /* Project object */;
+}

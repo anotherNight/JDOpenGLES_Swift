@@ -1,7 +1,9 @@
-attribute vec3 position;
-attribute vec3 color;
+#version 300 es
 
-varying vec3 outColor;
+layout(location = 0) in vec3 position;
+layout(location = 1) in vec3 color;
+
+out vec3 outColor;
 
 void main()
 {
